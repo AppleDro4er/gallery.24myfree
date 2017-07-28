@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTPS} on
+	RewriteRule (.*) http://gallery.24myfree.ru/$1 [L,R]
+</IfModule>

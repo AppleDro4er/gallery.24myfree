@@ -1,0 +1,83 @@
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="title" content="AppleDro4er"><link rel="icon" href="/img/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/js/jquery.min.js"></script><link rel="stylesheet" href="/style.css" type="text/css"><link href="http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,300,600&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"><title>AppleDro4er</title></head><body class="Main"><div class="PromoOverlay"><a name="up"></a><div class="SiteSelect"><div class="MenuItem HardwareSite LeftAlign"><div class="NameItem"><div class="IcoLink"></div><a href="/hardware/">Железо</a></div><div class="RightCorner"></div></div><div class="MenuItem FilmsSite"><div class="LeftCorner"></div><div class="NameItem"><div class="IcoLink"></div><a href="/films/">Кино</a></div><div class="RightCorner"></div></div><div class="MenuItem BooksSite RightAlign"><div class="LeftCorner"></div><div class="NameItem"><div class="IcoLink"></div><a href="/books/">Книги</a></div></div><div class="MenuItem AnimeSite RightSecond"><div class="RightBackCorner"></div><div class="NameItem"><div class="IcoLink"></div><a href="/anime/">Аниме</a></div><div class="RightCorner"></div></div><div class="GamesSite CenterSite"><div class="IcoLink"></div><a href="/games/">Игры</a></div></div><!--<noindex><a class="Branding" title="" href="" target="_blank" rel="nofollow" style="background: url('/img/reklama-body.jpg') no-repeat 50% 0"></a></noindex>--><div class="BannerBlock"><div class="WidthMain"><!--<noindex> <a href="" target="_blank" rel="nofollow"><img alt="" title="" src="/img/reklama-1.jpg" width="1037" height="127"></a></noindex>--><div class="B"></div></div></div><div class="WidthPage"><div class="MainMenuBlock"><div class="Logo"><div class="LoginPersonal"><a href="/login/?do=register">Регистрация</a></div><div class="LoginPopUp"><a href="/login/?do=auth">Вход</a></div><div class="LogoImg"><img style="display: inline;" src="/img/logo_m.png" alt="Logo" height="206px" width="206px"><img style="display: none;" class="LogoSkew" src="/img/logo_m_skew.png" alt="Logo" height="206px" width="206px"></div></div></div><div class="MainMenuSkew"><ul class="MainMenu"><li class="SelectedMM"><a href="/">Свежее</a></li><li><a href="/top/">Топ</a></li><li><a href="/old/">Старое</a></li></ul></div></div><div class="WidthMain"><div class="MainPage"><script type="text/javascript">$(document).ready(function(){
+ if ($("#sizen").text() <= 1 ) {
+ $(".MoreMain").hide();
+ }
+ var next_page = 1;
+ var totall_page = $("#sizen").text()*1;
+ $(document).scroll(function(){
+if($(window).scrollTop()+$(window).height()>=$(document).height()){
+ if (next_page < totall_page) {
+ next_page++;
+ $('.MoreMain').hide();
+ $('.MainPage').append('<div class="LoaderAjaxLife"><img src="/img/loader.gif" width="30" height="30" alt="Img" /></div>');
+ // «теневой» запрос к серверу
+ $.ajax({
+ type: "POST",
+ url: '/index_ajax.php?page='+next_page,
+ data: { FROM: '', SORT: 'new'},
+ success:function (data){
+ //добавляем полученные данные
+ //в конец контейнера
+ $('.MainPage .LoaderAjaxLife').remove();
+ //$('.MainPage').remove();
+ $('.MainPage').append(data);
+ if (next_page >= totall_page) {
+ $('.MoreMain').hide();
+ } else {
+ $('.MoreMain').show();
+ }
+ }
+ });
+ } else {
+ $('.MoreMain').hide();
+ }
+ return false;
+};
+});
+});
+</script><div class="PostHead" style="z-index:8"><a href="/games/Phoenix Point/78/"><style>.svg-image_78 { clip-path: url(#clip-triangle_78); }</style><svg width="1130" height="640"><image class="svg-image_78" alt="Создатель серии X-COM анонсировал Phoenix Point" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/view.php?id=78" width="1130" height="640"></image><defs><clipPath id="clip-triangle_78"> <polygon points="0 0, 1036 0, 1036 638.08, 0 558.08"></polygon></clipPath></defs></svg></a><div class="PopUpBlock"><h3><div class="PostLogo GamesSite"><div class="IcoLink"></div></div><a href="/games/Phoenix Point/78/"> Создатель серии X-COM анонсировал Phoenix Point</a></h3><div class="PopUpText" style="display: none;">Gollop'ом по Европам</div></div><div class="AuthorPostBlock"><div class="SectionName"><a href="/games/Phoenix Point/">Phoenix Point</a></div><div class="AuthorPost"><a href="/personal/1"></a></div><div class="DatePost">24.03.2016 20:09</div><div class="IcoBlock"><div class="Views">62</div></div></div></div><div class="PostHead" style="z-index:7"><a href="/games/Urban Empire/77/"><style>.svg-image_77 { clip-path: url(#clip-triangle_77); }</style><svg width="1130" height="640"><image class="svg-image_77" alt="Urban Empire – Стань градоправителем" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/view.php?id=77" width="1130" height="640"></image><defs><clipPath id="clip-triangle_77"> <polygon points="0 0, 1036 0, 1036 638.08, 0 558.08"></polygon></clipPath></defs></svg></a><div class="PopUpBlock"><h3><div class="PostLogo GamesSite"><div class="IcoLink"></div></div><a href="/games/Urban Empire/77/"> Urban Empire – Стань градоправителем</a></h3><div class="PopUpText" style="display: none;">Пре-альфа обзор</div></div><div class="AuthorPostBlock"><div class="SectionName"><a href="/games/Urban Empire/">Urban Empire</a></div><div class="AuthorPost"><a href="/personal/1"></a></div><div class="DatePost">22.03.2016 16:27</div><div class="IcoBlock"><div class="Views">52</div></div></div></div><div class="GameListWrap" style="z-index:6;"><div class="GameList"><a href="/films/Thief/76/"><style>.svg-image_76 { clip-path: url(#clip-triangle_76); }</style><svg width="600" height="400"><image class="svg-image_76" alt="Thief муви – начало" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/view.php?id=76" width="600" height="400"></image><defs><clipPath id="clip-triangle_76"><polygon points="0 0, 518 0, 518 358.92, 0 313.92"></polygon></clipPath></defs></svg></a><h3><div class="PostLogo FilmsSite"><div class="IcoLink"></div></div><a href="/films/Thief/76/"> Thief муви – начало</a></h3><div class="AuthorPostBlock"><div class="SectionName"><a href="/films/Thief/">Thief</a></div><div class="AuthorPost"><a href="/personal/1"></a></div><div class="DatePost">17.03.2016 03:13</div><div class="IcoBlock"><div class="Views">110</div></div></div></div><div class="GameList"><a href="/games/Long Journey Home/75/"><style>.svg-image_75 { clip-path: url(#clip-triangle_75); }</style><svg width="600" height="400"><image class="svg-image_75" alt="Long Journey Home – исследование космического пространства с элементами RPG" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/view.php?id=75" width="600" height="400"></image><defs><clipPath id="clip-triangle_75"><polygon points="0 0, 518 0, 518 358.92, 0 313.92"></polygon></clipPath></defs></svg></a><h3><div class="PostLogo GamesSite"><div class="IcoLink"></div></div><a href="/games/Long Journey Home/75/"> Long Journey Home – исследование космического пространства с элементами RPG</a></h3><div class="AuthorPostBlock"><div class="SectionName"><a href="/games/Long Journey Home/">Long Journey Home</a></div><div class="AuthorPost"><a href="/personal/1"></a></div><div class="DatePost">17.03.2016 00:36</div><div class="IcoBlock"><div class="Views">26</div></div></div></div></div>
+
+<div class="GameListWrap" style="z-index:4;">
+<div class="GameList">
+<a href="/anime/The Empire of Corpses/74/">
+<svg width="518" height="360" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>
+<clipPath id="hexagonal-mask">
+<polygon points="130,0 0,160 0,485 270,645 560,485 560,160" />
+</clipPath>
+</defs>
+<image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="/view.php?id=73">
+</svg>
+</a>
+<h3>
+<div class="PostLogo AnimeSite"><div class="IcoLink"></div></div>
+<a href="/anime/The Empire of Corpses/74/"> The Empire of Corpses - Трупы на службе её Величества!</a>
+</h3>
+<div class="AuthorPostBlock"><div class="SectionName"><a href="/anime/The Empire of Corpses/">The Empire of Corpses</a></div>
+<div class="AuthorPost"><a href="/personal/1"></a></div>
+<div class="DatePost">16.03.2016 14:05</div>
+<div class="IcoBlock"><div class="Views">278</div></div>
+</div>
+</div>
+<div class="GameList">
+<a href="/books/No Game No Life/73/">
+<svg width="518" height="360" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>
+<clipPath id="hexagonal-mask">
+<polygon points="130,0 0,160 0,485 270,645 560,485 560,160" />
+</clipPath>
+</defs>
+<image clip-path="url(#hexagonal-mask)" height="100%" width="100%" xlink:href="/view.php?id=73">
+</svg>
+</a>
+<h3>
+<div class="PostLogo BooksSite"><div class="IcoLink"></div></div>
+<a href="/books/No Game No Life/73/"> Без игры жизни нет. Том 1 - Родной мир</a>
+</h3>
+<div class="AuthorPostBlock"><div class="SectionName"><a href="/books/No Game No Life/">No Game No Life</a></div>
+<div class="AuthorPost"><a href="/personal/1"></a></div><div class="DatePost">16.03.2016 13:26</div>
+<div class="IcoBlock"><div class="Views">28</div></div></div></div></div>
+
+
+</div><div class="MoreMain"><a href="#">Еще</a></div><div class="B"></div></div></div>
+<script type="text/javascript" src="/js/main.js"></script></body></html>

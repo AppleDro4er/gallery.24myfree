@@ -1,0 +1,1 @@
+<?php define("DB_SERVER", "localhost");define("DB_USER", "u0371269_default");define("DB_PASS", "O8!bciNR");define("DB_NAME", "u0371269_main"); ?>
